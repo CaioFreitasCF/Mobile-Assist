@@ -6,8 +6,6 @@
 
 O Mobile Assist tem como objetivo auxiliar a população comum, sem instrução na área da saúde, e a equipe médica de primeiros socorros, fornecendo uma plataforma interativa que fornece instruções por meio de perguntas e respostas inteligentes. Com um sistema de perguntas e respostas automático, o Mobile Assist ajuda um usuário comum a salvar vidas com instruções claras e simples, como um passo a passo. Um simples auxílio de um civil pode ajudar a equipe do SAMU a salvar uma vida
 
-O diferencial do Mobile Assist é sua acessibilidade. Como um aplicativo móvel, qualquer pessoa com um smartphone pode ter acesso à plataforma e realizar uma série de exercícios de primeiros socorros simples que podem salvar uma vida. Seu sistema é adaptável a cada situação, baseando se nas respostas dadas pelo usuário, variando os procedimentos para cada situação.
-
 Por fim, essa série de perguntas e respostas é enviada ao hospital mais próximo, para que a equipe médica possa realizar um sistema de triagem de maneira mais eficiente. O Mobile Assist também conta com um formulário de doenças preexistentes preenchido pelo próprio usuário. Caso a pessoa acidentada seja um usuário da plataforma, esses dados são enviados junto aos procedimentos realizados pelo socorrista para o hospital mais próximo, otimizando a triagem. Temos como visão futura nos tornarmos uma plataforma de uso global, com cada pessoa tendo em seu smartphone o app fornecendo auxílio umas às outras e também para os hospitais que adotarem o sistema. Sempre buscamos atualizar o sistema com profissionais treinados.
 
 
