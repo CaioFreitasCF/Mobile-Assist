@@ -28,13 +28,24 @@ perguntas = [
 i = 0
 
 respostas= []
+""""
+Laço while que faz a verificação das respostas do usuário e inclui a resposta na lista respostas
 
-while i < len(perguntas) :
-    resposta = input((f"{perguntas[i]} ------> sim/não :"))
+"""
+while i < len(perguntas):
+    resposta = input(f"{perguntas[i]} ------> sim/não :").lower()
+    
+    while resposta not in ['sim', 'não']:
+        print("Por favor, responda apenas com 'sim' ou 'não'.")
+        resposta = input(f"{perguntas[i]} ------> sim/não :").lower()
+
     i += 1
-    respostas.append(resposta.lower())
+    respostas.append(resposta)
 
-
+"""
+Verificação para cada resposta com cada e caso necessário a
+instrução realicionada a pergunta é digitada
+"""
      
 if respostas[0] == 'sim':
     print("""
@@ -137,7 +148,6 @@ if respostas[7] == "sim":
            print("""
                  "--------- PACIENTE ESTÁ ENGASGANDO ------------"
            Como agir em caso de engasgo por corpo estranho: Manobra de Heimlich
-
            Posicione-se por trás e enlace a vítima com os braços ao redor do abdome (se for uma criança, ajoelhe-se primeiro), caso ela esteja consciente. 
            Uma das mãos permanece fechada sobre a chamada “boca do estômago” (região epigástrica). 
            A outra mão comprime a primeira, ao mesmo tempo em que empurra a “boca do estômago” para dentro e para cima,
@@ -154,10 +164,8 @@ if respostas[8] == "sim":
             "--------- PACIENTE ESTÁ AFOGADO ------------"
       O primeiro passo deve ser verificar se a vítima está respirando observando se o tórax infla ou não. 
       Caso ela esteja respirando é necessário colocá-la de lado para que ela não sufoque se começar a vomitar.
-
       Caso seja necessário realizar a respiração boca a boca, o socorrista deve inclinar a cabeça da vítima para trás e levantar o queixo. 
       Aperte o nariz dela com o polegar e o indicador e com a outra mão abra a boca da vítima.
-
       Inspire normalmente e cubra a boca da pessoa com a sua, soprando o ar lenta e regularmente até que o peito infle. 
       Cada insuflação deve durar aproximadamente um segundo até que a vítima reaja.
     """)
@@ -171,12 +179,19 @@ else:
 print("-------Relatório final--------")
 
 def imprimir_perguntas_respostas(perguntas, respostas):
+    """
+    Função que imprimime as perguntas e as respostas feitas pelo usuário
+    Args:perguntas , respostas
+        
+    Returns:impressão das perguntas e as respostas dos usuários
+    
+    """
     for pergunta, resposta in zip(perguntas, respostas):
         print(f"Pergunta feita ----> {pergunta} /// Resposta ----> {resposta}")
 
 imprimir_perguntas_respostas(perguntas, respostas)
 
-          
+help(imprimir_perguntas_respostas)          
 
 
 
@@ -188,9 +203,4 @@ imprimir_perguntas_respostas(perguntas, respostas)
 
 
 
-
-#r = 0
-#while r < len(respostas):
- #   print(f"{perguntas[r]} // resposta -----> {respostas[r]}")
-  #  r += 1
 

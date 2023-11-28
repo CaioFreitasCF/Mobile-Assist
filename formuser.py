@@ -25,16 +25,40 @@ perguntas = [
 
 
 def fazerpergunta(pergunta):
+    """
+    Função que realiza a pergunta ao usuário e verifica a 
+    resposta em sim ou não usando while
+
+    Args:pergunta
+        
+    Returns:resposta
+        
+    """
     resposta = input(pergunta + " (sim/não): ")
     while resposta not in ["sim", "não"]:
         print("Por favor, responda com 'sim' ou 'não'.")
         resposta = input(pergunta + " (sim/não): ")
     return resposta
 
-def fazerperguntas_list(list_perguntas):
+
+
+
+
+
+def fazerperguntas_lista(perguntas):
+    """
+     A função recebe a lista de perguntas e para cada pergunta
+     chama a função fazerpergunta afim de obter a resposta para cada pergunta
+     e então lança-la o dicionário respostas 
+     
+    Args:perguntas : lista
+    
+    Returns:respostas : dicionario
+        
+    """
     respostas = {}  
 
-    for pergunta in list_perguntas:
+    for pergunta in perguntas:
         resposta = fazerpergunta(pergunta)
         respostas[pergunta] = resposta
 
@@ -42,9 +66,18 @@ def fazerperguntas_list(list_perguntas):
 
 
 
-respostas_usuario = fazerperguntas_list(perguntas)
+respostas_usuario = fazerperguntas_lista(perguntas)
 
 def dados_extras():
+    """
+    Função que pega dados especificos de cada usuário sendo esses
+    nome,peso,idade,altura 
+
+    Args:none
+        
+    Returns:nome,peso,idade,altura
+        
+    """
     nome = input("Nome:")
     peso = input("Peso:")
     idade = input("Idade:")
@@ -64,23 +97,15 @@ print(f"Idade: {idade}")
 print(f"Altura: {altura}")
 
 
+
 print("\n------ Formulario de doenças preexistentes ---------")
 for pergunta, resposta in respostas_usuario.items():
     print(f"{pergunta}: Resposta selecionada ---> {resposta}")
 
 
 
+help(fazerpergunta)
 
+help(fazerperguntas_lista)
 
-
-
-
-
-print(perguntas[0])
-
-
-pergunta1 = perguntas[0]
-
-resposta1 = input(f"{pergunta1} ------> sim/não")
-if resposta1 == "sim":
-    print()
+help(dados_extras)
