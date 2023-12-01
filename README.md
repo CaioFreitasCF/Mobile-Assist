@@ -38,6 +38,9 @@ Após isso, será necessário somente a execução do arquivo "formuser.py" para
 ## Desenvolvimento
 O projeto foi desenvolvido em Python, através da plataforma Visual Studio Code, utilizando a extensão "Python", para a Faculdade de Informática e Administração Paulista, como um trabalho referente à Global Solutions, e será validado pelo professor Helder Faria Andiolo.
 
+## Vídeo Explicativo - Python
+<a href="https://www.youtube.com/watch?v=BWvOTK_oH4Q"><img src="https://github.com/CaioFreitasCF/Mobile-Assist/assets/82892986/cd871db5-b9c1-429c-9673-549f5a2757ec" alt="Video explicativo para python" border="0"></a>
+
 ### Pitch do Mobile Assist
 <a href="https://www.youtube.com/watch?v=GrdHiHn2XyU&t=39s"><img src="https://github.com/CaioFreitasCF/Mobile-Assist/assets/82892986/4ebb9a79-27fa-421d-928c-426c9223ec63" alt="Slide de PowerPoint do projeto" border="0"></a>
 
